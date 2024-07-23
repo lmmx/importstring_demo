@@ -1,0 +1,26 @@
+[project]
+name = "importstring_demo"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Louis Maddox", email = "louismmx@gmail.com"},
+]
+dependencies = [
+    "pydantic>=2.8.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+deptest = [
+    "deptry>=0.17.0",
+]
